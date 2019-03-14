@@ -1,0 +1,49 @@
+<!--pages/liepin/liepin.wxml-->
+<!-- <form bindsubmit="formSubmit" bindreset="formReset">
+  
+
+  <view class="section">
+    <view class="section__title">猎聘账户</view>
+    <input name="userLogin" placeholder="please input here" />
+  </view>
+  
+  <view class="section">
+    <view class="section__title">猎聘密码</view>
+    <input name="userPwd" placeholder="请输入" />
+  </view>
+  
+  <view class="btn-area">
+    <button form-type="submit">提交</button>
+    <button form-type="reset">重置</button>
+  </view>
+</form> -->
+
+<!--pages/liepin/liepin.wxml-->
+ <view class="section">
+      <view class="bg_red logo" style="{{ logo == 1?'background: url(http://pno1xahjd.bkt.clouddn.com/img/haski1.gif) no-repeat center;background-size:100% 100%;':'background: url(http://pno1xahjd.bkt.clouddn.com/img//haski2.gif) no-repeat center;background-size:100% 100%;'}}">
+      </view>
+      <view class="main">
+      
+      <form class="form" bindsubmit="formSubmit">
+          <div class="d-user-login">
+              <input type="text" name="userLogin" class="input user-login" bindfocus='userLoginFocus' bindblur='userLoginBlur' placeholder="请输入猎聘账号"/>
+              <i class="icon-account" style="{{ userInput == 1? 'background: url(http://pno1xahjd.bkt.clouddn.com/img/account32.png) no-repeat #899dda center;':'background: url(http://pno1xahjd.bkt.clouddn.com/img/account32.png) no-repeat #899dda center;width: 2.4rem;'}}"></i>
+          </div>
+
+          <div class="d-user-login">
+              <input type="password" name="userPwd" class="input user-pass"  bindfocus='userPassFocus' bindblur='userPassBlur'  placeholder="请输入猎聘账户密码"/>
+              <i class="icon-password" style="{{ passInput == 1? 'background: url(http://pno1xahjd.bkt.clouddn.com/img/password32.png) no-repeat #899dda center;':'background: url(http://pno1xahjd.bkt.clouddn.com/img/password32.png) no-repeat #899dda center;width: 2.4rem;'}}"></i>
+
+          </div>
+
+          <div class="d-user-login">
+           <button class="btn" form-type="submit">提交</button>
+              
+          </div>
+
+      </form>
+      
+      
+      
+      </view>
+  </view>

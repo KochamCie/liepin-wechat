@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/liepin/liepin",
+    
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "uHub",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首 页",
+        "iconPath": "pages/images/index-off.png",
+        "selectedIconPath": "pages/images/index-on.png"
+      },
+      {
+        "pagePath": "pages/liepin/liepin",
+        "text": "猎聘工具",
+        "iconPath": "pages/images/liepin-off.png",
+        "selectedIconPath": "pages/images/liepin-on.png"
+      }
+    ]
+  }
+}
