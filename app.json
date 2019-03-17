@@ -1,8 +1,7 @@
 {
   "pages":[
-    "pages/liepin/liepin",
-    
     "pages/index/index",
+    "pages/liepin/liepin",
     "pages/logs/logs"
   ],
   "window":{
