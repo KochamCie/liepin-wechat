@@ -24,7 +24,7 @@
       </view>
       <view class="main">
       
-      <form class="form" bindsubmit="formSubmit">
+      <form class="form" bindsubmit="formSubmit" report-submit='true'>
           <div class="d-user-login">
               <input type="text" name="userLogin" class="input user-login" bindfocus='userLoginFocus' bindblur='userLoginBlur' placeholder="请输入猎聘账号"/>
               <i class="icon-account" style="{{ userInput == 1? 'background: url(http://pno1xahjd.bkt.clouddn.com/img/account32.png) no-repeat #899dda center;':'background: url(http://pno1xahjd.bkt.clouddn.com/img/account32.png) no-repeat #899dda center;width: 2.4rem;'}}"></i>

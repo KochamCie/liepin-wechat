@@ -122,5 +122,6 @@ App({
     userInfo: null,
     openId: null,
     apiHost: 'https://www.beelego.com'
+    // apiHost: 'http://localhost:8888'
   }
 })

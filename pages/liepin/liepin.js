@@ -68,7 +68,7 @@ Page({
   },
   formSubmit(e) {
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
-
+    console.log('form发生了submit事件，携带数据为：', e.detail.formId)
     var data = e.detail.value;
     if("" == data.userLogin || "" == data.userPwd){
       wx.showToast({
@@ -78,9 +78,16 @@ Page({
       })
       return;
     }
+    var formId = e.detail.formId;
+    // wx.showToast({
+    //   title: formId,
+    //   icon: 'none',
+    //   duration: 2000
+    // })
+
 
     wx.request({
-      url: app.globalData.apiHost +'/wechat/liepin/' + wx.getStorageSync('openId'),
+      url: app.globalData.apiHost + '/wechat/liepin/' + wx.getStorageSync('openId') + '/' + formId,
       data: e.detail.value,
       method: 'POST',
       header: {
