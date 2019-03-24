@@ -96,7 +96,7 @@ Page({
       success: function (res) {
         if (res.data.openId == wx.getStorageSync('openId')){
           wx.showToast({
-            title: '殴咖了',
+            title: '欧咖了',
             icon: 'success',
             duration: 2000
           })
@@ -108,6 +108,13 @@ Page({
           })
         }
         console.log(res.data);
+      },
+      error: function(e){
+        wx.showToast({
+          title: e,
+          icon: 'none',
+          duration: 2000
+        })
       }
     })
 

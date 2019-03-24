@@ -20,19 +20,19 @@
 
 <!--pages/liepin/liepin.wxml-->
  <view class="section">
-      <view class="bg_red logo" style="{{ logo == 1?'background: url(http://pno1xahjd.bkt.clouddn.com/img/haski1.gif) no-repeat center;background-size:100% 100%;':'background: url(http://pno1xahjd.bkt.clouddn.com/img//haski2.gif) no-repeat center;background-size:100% 100%;'}}">
+      <view class="bg_red logo" style="{{ logo == 1?'background: url(http://cdn.beelego.com/img/haski1.gif) no-repeat center;background-size:100% 100%;':'background: url(http://cdn.beelego.com/img//haski2.gif) no-repeat center;background-size:100% 100%;'}}">
       </view>
       <view class="main">
       
       <form class="form" bindsubmit="formSubmit" report-submit='true'>
           <div class="d-user-login">
               <input type="text" name="userLogin" class="input user-login" bindfocus='userLoginFocus' bindblur='userLoginBlur' placeholder="请输入猎聘账号"/>
-              <i class="icon-account" style="{{ userInput == 1? 'background: url(http://pno1xahjd.bkt.clouddn.com/img/account32.png) no-repeat #899dda center;':'background: url(http://pno1xahjd.bkt.clouddn.com/img/account32.png) no-repeat #899dda center;width: 2.4rem;'}}"></i>
+              <i class="icon-account" style="{{ userInput == 1? 'background: url(http://cdn.beelego.com/img/account32.png) no-repeat #899dda center;':'background: url(http://cdn.beelego.com/img/account32.png) no-repeat #899dda center;width: 2.4rem;'}}"></i>
           </div>
 
           <div class="d-user-login">
               <input type="password" name="userPwd" class="input user-pass"  bindfocus='userPassFocus' bindblur='userPassBlur'  placeholder="请输入猎聘账户密码"/>
-              <i class="icon-password" style="{{ passInput == 1? 'background: url(http://pno1xahjd.bkt.clouddn.com/img/password32.png) no-repeat #899dda center;':'background: url(http://pno1xahjd.bkt.clouddn.com/img/password32.png) no-repeat #899dda center;width: 2.4rem;'}}"></i>
+              <i class="icon-password" style="{{ passInput == 1? 'background: url(http://cdn.beelego.com/img/password32.png) no-repeat #899dda center;':'background: url(http://cdn.beelego.com/img/password32.png) no-repeat #899dda center;width: 2.4rem;'}}"></i>
 
           </div>
 

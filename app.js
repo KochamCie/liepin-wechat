@@ -51,6 +51,7 @@ App({
         var code = res.code; //返回code
         wx.request({
           url: this.globalData.apiHost +'/wechat/openid/' + res.code,
+          method: 'post',
           data: {},
           header: {
             'content-type': 'json'
